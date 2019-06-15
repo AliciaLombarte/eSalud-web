@@ -8,6 +8,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 public class Result{
     
 	private int result;
+	private String content;
 	private ArrayList<User> listUsers;
 	
 	public Result() {}
@@ -26,6 +27,19 @@ public class Result{
 
 	public void setListUsers(ArrayList<User> listUsers) {
 		this.listUsers = listUsers;
+	}
+
+	@Override
+	public String toString() {
+		return "Result [result=" + result + ", listUsers=" + listUsers + "]";
+	}
+
+	public String getContent() {
+		return content;
+	}
+
+	public void setContent(String content) {
+		this.content = content;
 	}
 	
 }

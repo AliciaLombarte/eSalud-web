@@ -1,8 +1,11 @@
 package domains;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonPropertyOrder({"originalPass","newPass","newPass2"})
+@JsonIgnoreProperties
+
 public class Password{
     
 	private String originalPass;

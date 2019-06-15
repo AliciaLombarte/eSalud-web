@@ -1,8 +1,10 @@
 package domains;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonPropertyOrder({"email","pass"})
+@JsonIgnoreProperties
 public class Doctor{
     
 	private String email;

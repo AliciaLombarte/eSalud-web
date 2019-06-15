@@ -2,18 +2,25 @@ package domains;
 
 import java.util.Date;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-@JsonPropertyOrder({"fecha","dolorPierna","dolorEspalda","temperatura","emailUser","photo","score"})
+@JsonPropertyOrder({"fecha","dolorPierna","dolorEspalda","temperatura","emailUser","photo", "fileName","score"})
+@JsonIgnoreProperties
+
 public class WoundTracks{
-    
+   
+	
 	private Date fecha;
 	private String dolorPierna;
 	private String dolorEspalda;
 	private String temperatura;
 	private String photo;
+	private String fileName;
 	private String emailUser;
-	private String score;
+	private int score;
+	private String questionnaireName;
+	
 	
 	public WoundTracks() {}
 
@@ -57,11 +64,11 @@ public class WoundTracks{
 		this.photo = photo;
 	}
 
-	public String getScore() {
+	public int getScore() {
 		return score;
 	}
 
-	public void setScore(String score) {
+	public void setScore(int score) {
 		this.score = score;
 	}
 
@@ -71,6 +78,29 @@ public class WoundTracks{
 
 	public void setDolorEspalda(String dolorEspalda) {
 		this.dolorEspalda = dolorEspalda;
+	}
+
+	@Override
+	public String toString() {
+		return "WoundTracks [fecha=" + fecha + ", dolorPierna=" + dolorPierna + ", dolorEspalda=" + dolorEspalda
+				+ ", temperatura=" + temperatura + ", photo=" + photo + ", fileName=" + fileName + ", emailUser="
+				+ emailUser + ", score=" + score + ", questionnaireName=" + questionnaireName + "]";
+	}
+
+	public String getFileName() {
+		return fileName;
+	}
+
+	public String getQuestionnaireName() {
+		return questionnaireName;
+	}
+
+	public void setQuestionnaireName(String questionnaireName) {
+		this.questionnaireName = questionnaireName;
+	}
+
+	public void setFileName(String fileName) {
+		this.fileName = fileName;
 	}
 
 	
