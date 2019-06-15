@@ -1,0 +1,28 @@
+html{
+  margin: 0px;
+}
+
+body{
+  margin:0px;
+  padding: 1%;
+}
+
+#cuerpo{
+  margin:0px;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.botonesHeader1{
+	margin-top:9%;
+}
+
+.botonesHeader2{
+	margin-left:8%;
+	margin-top:7%;
+}
+
+.botonesHeader3{
+	margin-left:18%;
+	margin-top:8%;
+}

@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <title>Inicio</title>
+    <link rel="stylesheet" type="text/css" href="style/css/registroPaciente.css">
+    <script type="text/javascript" src="scripts/.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <script>
+    
+    </script>
+  </head>
+  <body>
+   
+   <nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	 	<!--  
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="#">WebSiteName</a>
+	    </div>
+	    --> 
+	    <img style="width:8%; height:6%; margin-top:0.3%; margin-right:1%; float:left" src="images/logo.jpg">
+	    <ul class="nav navbar-nav">
+	      <li>
+	      <form  action="/TFG-Web/controller" method="post">
+	        	<input type="hidden" name="option" value="pacientes">
+	       	 	<input type="submit" class="btn btn-primary botonesHeader1" value="Pacientes">
+	      </form>
+	      </li>
+	      <li>
+	      <form class="" action="/TFG-Web/controller" method="post">
+	        	<input type="hidden" name="option" value="cuestionarios">
+	       	 	<input type="submit" class="btn btn-info botonesHeader2" value="Cuestionarios">
+	      </form>
+	      </li>
+	      <li>
+	      <form class="" action="/TFG-Web/controller" method="post">
+	        	<input type="hidden" name="option" value="protocolos">
+	       	 	<input type="submit" class="btn btn-info botonesHeader3" value="Protocolos">
+	      </form>
+	      </li>
+	    </ul>
+	  </div>
+	</nav>
+    
+    <div class="wrapper">
+      <form class="form-signin" action="/TFG-Web/controller" method="post">
+        <h2 class="form-signin-heading">Registrar paciente</h2>
+        <br>
+        <input type="hidden" name="option" value="registro">
+        <input class="form-control" type="text" name="nombre" placeholder="Nombre" >
+        <br>
+        <input class="form-control" type="text" name="apellido1" placeholder="Primer apellido" >
+        <br>
+        <input class="form-control" type="text" name="apellido2" placeholder="Segundo Apellido" >
+        <br>
+        <input class="form-control" type="number" min="0" name="edad" placeholder="Edad" >
+        <br>
+        <input class="form-control" type="email" name="email" placeholder="Email de usuario" >
+        <br>
+        <input class="btn btn-lg btn-primary btn-block" type="submit" value="Iniciar">
+      </form>
+
+    </div>
+     
+  </body>
+</html>
