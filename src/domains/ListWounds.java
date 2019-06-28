@@ -1,13 +1,9 @@
 package domains;
 
 import java.util.ArrayList;
-
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonPropertyOrder({"list"})
-@JsonIgnoreProperties
-
 public class ListWounds{
     
 	@Override

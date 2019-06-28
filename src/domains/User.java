@@ -1,11 +1,8 @@
 package domains;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonPropertyOrder({"nombre","apellido1","apellido2","edad","username","pass"})
-@JsonIgnoreProperties
-
 public class User{
     
 	private String nombre;

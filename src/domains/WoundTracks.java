@@ -1,13 +1,9 @@
 package domains;
 
 import java.util.Date;
-
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonPropertyOrder({"fecha","dolorPierna","dolorEspalda","temperatura","emailUser","photo", "fileName","score"})
-@JsonIgnoreProperties
-
 public class WoundTracks{
    
 	
